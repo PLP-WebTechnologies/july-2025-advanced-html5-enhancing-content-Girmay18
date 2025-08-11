@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Form Example</title>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced Form with Semantic HTML5</h1>
+</header>
+
+<main>
+
+  <section>
+    <h2>Product Features</h2>
+    <ul>
+      <li>Easy to use</li>
+      <li>Responsive design</li>
+      <li>Accessible and SEO friendly</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pricing Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Storage</th>
+          <th>Support</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>$9.99/mo</td>
+          <td>10 GB</td>
+          <td>Email Support</td>
+        </tr>
+        <tr>
+          <td>Standard</td>
+          <td>$19.99/mo</td>
+          <td>100 GB</td>
+          <td>24/7 Phone Support</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>$29.99/mo</td>
+          <td>1 TB</td>
+          <td>Priority Support</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Product Image</h2>
+    <figure>
+      <img src="/images/product-1.jpg" alt="Product example image" width="600" />
+      <figcaption>Our product in action.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Product Video Demo</h2>
+    <figure>
+      <video controls width="600" preload="metadata" poster="https://via.placeholder.com/600x340.png?text=Video+Preview">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Watch this demo video to learn more about our product features.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Product Audio Overview</h2>
+    <figure>
+      <audio controls>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+      <figcaption>Listen to the product overview audio.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="post" novalidate>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="fname" name="firstName" placeholder="John" required autocomplete="given-name" />
+
+        <label for="lname">Last Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="lname" name="lastName" placeholder="Doe" required autocomplete="family-name" />
+
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required autocomplete="email" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username <span aria-hidden="true">*</span></label>
+        <input type="text" id="username" name="username" placeholder="johndoe123" required autocomplete="username" />
+
+        <label for="password">Password <span aria-hidden="true">*</span></label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required minlength="8" autocomplete="new-password" />
+
+        <label for="confirmPassword">Confirm Password <span aria-hidden="true">*</span></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required minlength="8" autocomplete="new-password" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Info</legend>
+
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" id="birthdate" name="birthdate" max="2005-12-31" autocomplete="bday" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" pattern="^\+?\d{1,4}[\s-]?\d{3}[\s-]?\d{3,4}$" autocomplete="tel" />
+
+        <label for="country">Country</label>
+        <select id="country" name="country" autocomplete="country">
+          <option value="">Select your country</option>
+          <option value="rw">Rwanda</option>
+          <option value="ke">Kenya</option>
+          <option value="ng">Nigeria</option>
+          <option value="et">Ethiopia</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" maxlength="500"></textarea>
+
+        <label for="referral" title="Readonly input, can’t be changed by user">Referral Code</label>
+        <input type="text" id="referral" name="referral" value="WELCOME2025" readonly />
+      </fieldset>
+
+      <button type="submit">Register</button>
+
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Girmay's Enhanced Form Demo</p>
+</footer>
+
+</body>
+</html>
